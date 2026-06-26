@@ -1,3 +1,4 @@
+import logo from "./assets/logo.png"
 import { useState, useEffect } from "react";
 import {
   Menu,
@@ -78,14 +79,7 @@ export default function App() {
             onClick={() => goto("home")}
             className="flex items-center gap-2.5"
           >
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span
-                className="text-white font-extrabold text-sm"
-                style={{ fontFamily: "'Outfit', sans-serif" }}
-              >
-                G
-              </span>
-            </div>
+            <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <span
               className={`text-xl font-bold transition-colors ${
                 scrolled ? "text-gray-900" : "text-white"
@@ -738,14 +732,7 @@ export default function App() {
       <footer className="bg-[#07101f] py-12 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <button onClick={() => goto("home")} className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span
-                className="text-white font-extrabold text-sm"
-                style={{ fontFamily: "'Outfit', sans-serif" }}
-              >
-                G
-              </span>
-            </div>
+            <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <div className="text-left">
               <div className="text-white font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
                 Grokkon
