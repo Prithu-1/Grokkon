@@ -18,7 +18,7 @@ const NAV = [
   { id: "home", label: "Home" },
   { id: "products", label: "Products" },
   { id: "about", label: "About Us" },
-  { id: "founder", label: "Our Founder" },
+  { id: "founder", label: "Our Team" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -392,19 +392,7 @@ export default function App() {
                       : f.color === "indigo"
                       ? "bg-indigo-50 text-indigo-600"
                       : "bg-violet-50 text-violet-600"
-                  }`}
-                >
-                  {f.icon}
-                </div>
-                <h3
-                  className="text-gray-900 font-bold text-base mb-2"
-                  style={{ fontFamily: "'Outfit', sans-serif" }}
-                >
-                  {f.title}
-                </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
-              </div>
-            ))}
+              
           </div>
         </div>
       </section>
@@ -584,13 +572,13 @@ export default function App() {
         <div className="relative max-w-5xl mx-auto px-6">
           <div className="text-center mb-14">
             <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">
-              Our Founder
+              Our Team
             </span>
             <h2
               className="text-4xl font-extrabold text-white mt-3"
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
-              A 13-year-old with a billion-rupee vision.
+              A 13-year-old with a billion-dollar vision.
             </h2>
           </div>
 
@@ -618,7 +606,7 @@ export default function App() {
             </div>
             <div className="lg:col-span-3 space-y-5">
               <p className="text-gray-300 text-lg leading-relaxed">
-                While most kids his age were worrying about exams, Prithu Mishra was watching his
+                While most kids his age were worrying about exams, Prithu was watching his
                 neighbourhood shopkeepers struggle — overcharged by suppliers, blindsided by GST
                 changes, with no one to guide them.
               </p>
