@@ -749,7 +749,7 @@ export default function App() {
           </div>
 
           <div className="text-gray-600 text-xs text-center">
-            © 2025 Grokkon. All rights reserved.
+            © 2026 Grokkon. All rights reserved.
           </div>
         </div>
       </footer>
