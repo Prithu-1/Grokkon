@@ -377,6 +377,24 @@ export default function App() {
                 title: "Tax & Law Updates",
                 desc: "Never miss a GST deadline or new tax bill. Grokkon monitors government updates and explains what they mean for you.",
               },
+              {
+                icon: <TrendingUp size={22} />,
+                color: "blue",
+                title: "Opportunity Radar",
+                desc: "AI detects business growth opportunities like subsidies, price drops, seasonal demand, and market trends.",
+              },
+              {
+                icon: <Check size={22} />,
+                color: "indigo",
+                title: "Business Health Score",
+                desc: "A daily score (0–100) that measures your business's financial health and overall performance.",
+              },
+              {
+                icon: <FileText size={22} />,
+                color: "violet",
+                title: "Automatic Business Diary",
+                desc: "AI automatically records and summarizes your business's daily activities, income, expenses, and key events.",
+              },
             ].map((f, i) => (
               <div
                 key={i}
