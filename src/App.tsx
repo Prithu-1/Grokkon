@@ -110,12 +110,6 @@ export default function App() {
 
           <div className="flex items-center gap-4">
             <button
-              onClick={openWaitlist}
-              className="hidden md:inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-blue-700 active:scale-95 transition-all"
-            >
-              Join Waitlist <ArrowRight size={15} />
-            </button>
-            <button
               onClick={() => setMenuOpen(!menuOpen)}
               className={`md:hidden p-1 ${
                 scrolled ? "text-gray-900" : "text-white"
@@ -137,12 +131,6 @@ export default function App() {
                 {n.label}
               </button>
             ))}
-            <button
-              onClick={openWaitlist}
-              className="mt-2 w-full bg-blue-600 text-white py-3 rounded-lg text-sm font-semibold"
-            >
-              Join Waitlist
-            </button>
           </div>
         )}
       </header>
@@ -457,12 +445,6 @@ export default function App() {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={openWaitlist}
-                className="w-full border-2 border-blue-600 text-blue-600 py-3 rounded-xl font-bold text-sm hover:bg-blue-50 active:scale-95 transition-all"
-              >
-                Join Waitlist
-              </button>
             </div>
 
             <div className="relative border-2 border-blue-600 rounded-2xl p-8 bg-gradient-to-b from-blue-50/80 to-white flex flex-col">
@@ -505,12 +487,6 @@ export default function App() {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={openWaitlist}
-                className="w-full bg-blue-600 text-white py-3 rounded-xl font-bold text-sm hover:bg-blue-700 active:scale-95 transition-all"
-              >
-                Join Waitlist
-              </button>
             </div>
           </div>
 
@@ -689,12 +665,6 @@ export default function App() {
             We are launching soon. Join our waitlist to get early access and help shape the product
             that will change how India does business.
           </p>
-          <button
-            onClick={openWaitlist}
-            className="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 active:scale-95 transition-all inline-flex items-center gap-3 shadow-xl"
-          >
-            Join the Waitlist <ArrowRight size={20} />
-          </button>
         </div>
       </section>
 
