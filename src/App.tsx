@@ -8,7 +8,6 @@ import {
   Globe,
   FileText,
   Bell,
-  ArrowRight,
   Check,
   Star,
   ChevronDown,
@@ -31,6 +30,13 @@ export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const sessionSubmitted = sessionStorage.getItem("grokkon-waitlist-submitted");
+    if (sessionSubmitted === "true") {
+      setSubmitted(true);
+    }
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -57,7 +63,10 @@ export default function App() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (submitted) return;
+
     setSubmitted(true);
+    sessionStorage.setItem("grokkon-waitlist-submitted", "true");
     openWaitlist();
   };
 
