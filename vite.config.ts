@@ -4,4 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  server: {
+    open: 'new-window',
+  },
+  preview: {
+    open: 'new-window',
+  },
 })
