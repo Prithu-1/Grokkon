@@ -536,13 +536,6 @@ export default function App() {
               </button>
             </div>
           </section>
-
-          <p className="text-center text-gray-400 text-xs mt-8">
-            Final pricing will be confirmed at launch. Waitlist members get early-bird access.
-          </p>
-        </div>
-      </section>
-
       {/* ─── ABOUT US ────────────────────────────────────────────────────── */}
       <section id="about" className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
