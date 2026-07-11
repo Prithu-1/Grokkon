@@ -517,6 +517,26 @@ export default function App() {
             </div>
           </div>
 
+          <section className="mt-20 bg-slate-950 rounded-[2rem] border border-slate-800 p-10 text-white">
+            <div className="max-w-3xl mx-auto text-center">
+              <span className="text-blue-400 text-xs font-semibold uppercase tracking-[0.3em]">
+                Preview
+              </span>
+              <h3 className="text-3xl font-extrabold mt-4 mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
+                See the Grokkon experience in action
+              </h3>
+              <p className="text-slate-300 mb-8 text-base leading-relaxed">
+                Explore the prototype to get a first-hand feel for how Grokkon tracks expenses, alerts you to business events, and puts financial intelligence at your fingertips.
+              </p>
+              <button
+                onClick={() => window.location.href = "https://grokkon-prototype.vercel.app/"}
+                className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-400 active:scale-95"
+              >
+                Preview
+              </button>
+            </div>
+          </section>
+
           <p className="text-center text-gray-400 text-xs mt-8">
             Final pricing will be confirmed at launch. Waitlist members get early-bird access.
           </p>
