@@ -529,7 +529,7 @@ export default function App() {
                 Explore the prototype to get a first-hand feel for how Grokkon tracks expenses, alerts you to business events, and puts financial intelligence at your fingertips.
               </p>
               <button
-                onClick={() => window.location.href = "https://grokkon-prototype.vercel.app/"}
+                onClick={() => window.open("https://grokkon-prototype.vercel.app/", "_blank")}
                 className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-400 active:scale-95"
               >
                 Preview
