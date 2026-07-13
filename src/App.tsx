@@ -682,6 +682,42 @@ export default function App() {
               </div>
             </div>
           </div>
+          <div className="mt-16 border-t border-white/10 pt-12">
+            <div className="grid lg:grid-cols-5 gap-12 items-start">
+              <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
+                <div
+                  className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
+                  style={{
+                    background: "linear-gradient(135deg, #0f766e 0%, #38bdf8 100%)",
+                    fontFamily: "'Outfit', sans-serif",
+                  }}
+                >
+                  RT
+                </div>
+                <div>
+                  <div
+                    className="text-white font-bold text-xl"
+                    style={{ fontFamily: "'Outfit', sans-serif" }}
+                  >
+                    Raghav Tyagi
+                  </div>
+                  <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
+                  <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
+                </div>
+              </div>
+              <div className="lg:col-span-3 space-y-5">
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  <strong>Raghav Tyagi</strong> is a 13-year-old co-founder of Grokkon with an exceptional passion for science and innovation. His curiosity and analytical mindset help him approach challenges with logic and creativity. He is always eager to learn and contribute new ideas that strengthen the team&apos;s vision.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  Raghav has a strong interest in Physics, Biology, and Chemistry, and has already completed studying these subjects up to the 10th-grade level.
+                </p>
+                <p className="text-gray-400 leading-relaxed">
+                  His scientific knowledge, dedication, and problem-solving abilities make him a valuable member of Grokkon as we continue building solutions for the future.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
