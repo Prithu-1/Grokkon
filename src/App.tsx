@@ -77,11 +77,10 @@ export default function App() {
     >
       {/* ─── NAV ─────────────────────────────────────────────────────────── */}
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-          scrolled
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
             ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <button
@@ -90,9 +89,8 @@ export default function App() {
           >
             <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <span
-              className={`text-xl font-bold transition-colors ${
-                scrolled ? "text-gray-900" : "text-white"
-              }`}
+              className={`text-xl font-bold transition-colors ${scrolled ? "text-gray-900" : "text-white"
+                }`}
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
               Grokkon
@@ -104,13 +102,12 @@ export default function App() {
               <button
                 key={n.id}
                 onClick={() => goto(n.id)}
-                className={`text-sm font-medium transition-colors ${
-                  active === n.id
+                className={`text-sm font-medium transition-colors ${active === n.id
                     ? "text-blue-500"
                     : scrolled
-                    ? "text-gray-600 hover:text-gray-900"
-                    : "text-white/80 hover:text-white"
-                }`}
+                      ? "text-gray-600 hover:text-gray-900"
+                      : "text-white/80 hover:text-white"
+                  }`}
               >
                 {n.label}
               </button>
@@ -120,9 +117,8 @@ export default function App() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className={`md:hidden p-1 ${
-                scrolled ? "text-gray-900" : "text-white"
-              }`}
+              className={`md:hidden p-1 ${scrolled ? "text-gray-900" : "text-white"
+                }`}
             >
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -401,13 +397,12 @@ export default function App() {
                 className="bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all duration-300 group"
               >
                 <div
-                  className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 ${
-                    f.color === "blue"
+                  className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 ${f.color === "blue"
                       ? "bg-blue-50 text-blue-600"
                       : f.color === "indigo"
-                      ? "bg-indigo-50 text-indigo-600"
-                      : "bg-violet-50 text-violet-600"
-                  }`}
+                        ? "bg-indigo-50 text-indigo-600"
+                        : "bg-violet-50 text-violet-600"
+                    }`}
                 >
                   {f.icon}
                 </div>
@@ -536,299 +531,301 @@ export default function App() {
               </button>
             </div>
           </section>
-      {/* ─── ABOUT US ────────────────────────────────────────────────────── */}
-      <section id="about" className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=700&h=500&fit=crop&auto=format"
-              alt="Small business owner at their shop reviewing finances on smartphone"
-              className="rounded-2xl w-full h-[420px] object-cover shadow-xl bg-blue-100"
-            />
-            <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-5 shadow-xl border border-gray-100 hidden lg:block">
-              <div
-                className="text-blue-600 font-extrabold text-2xl"
-                style={{ fontFamily: "'Outfit', sans-serif" }}
-              >
-                ₹49/mo
-              </div>
-              <div className="text-gray-500 text-xs mt-0.5">Accessible to everyone</div>
-            </div>
           </div>
-
-          <div>
-            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              About Grokkon
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-gray-900 mt-3 mb-6 leading-tight"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
-            >
-              Every business deserves powerful financial tools
-            </h2>
-            <p className="text-gray-600 leading-relaxed mb-5">
-              Grokkon was born from a simple idea: empower every entrepreneur with
-              intelligent financial tools that are easy to use, affordable, and
-              built for the Indian market.
-            </p>
-            <div className="grid gap-4">
-              {[
-                "SMS-based transaction tracking across banks",
-                "AI-powered market and tax alerts",
-                "Built for vernacular users and voice-driven assistants",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-3">
-                  <div className="w-2.5 h-2.5 bg-blue-600 rounded-full mt-2" />
-                  <p className="text-gray-600 text-sm">{item}</p>
+</section>
+          {/* ─── ABOUT US ────────────────────────────────────────────────────── */}
+          <section id="about" className="py-24 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+              <div className="relative">
+                <img
+                  src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=700&h=500&fit=crop&auto=format"
+                  alt="Small business owner at their shop reviewing finances on smartphone"
+                  className="rounded-2xl w-full h-[420px] object-cover shadow-xl bg-blue-100"
+                />
+                <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-5 shadow-xl border border-gray-100 hidden lg:block">
+                  <div
+                    className="text-blue-600 font-extrabold text-2xl"
+                    style={{ fontFamily: "'Outfit', sans-serif" }}
+                  >
+                    ₹49/mo
+                  </div>
+                  <div className="text-gray-500 text-xs mt-0.5">Accessible to everyone</div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FOUNDER ─────────────────────────────────────────────────────── */}
-      <section id="founder" className="py-24 bg-[#07101f] relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
-
-        <div className="relative max-w-5xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">
-              Our Team
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-white mt-3"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
-            >
-              A 13-year-old with a billion-dollar vision.
-            </h2>
-          </div>
-
-          <div className="grid lg:grid-cols-5 gap-12 items-start">
-            <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
-              <div
-                className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
-                style={{
-                  background: "linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%)",
-                  fontFamily: "'Outfit', sans-serif",
-                }}
-              >
-                PM
               </div>
+
               <div>
-                <div
-                  className="text-white font-bold text-xl"
+                <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
+                  About Grokkon
+                </span>
+                <h2
+                  className="text-4xl font-extrabold text-gray-900 mt-3 mb-6 leading-tight"
                   style={{ fontFamily: "'Outfit', sans-serif" }}
                 >
-                  Prithu Mishra
+                  Every business deserves powerful financial tools
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  Grokkon was born from a simple idea: empower every entrepreneur with
+                  intelligent financial tools that are easy to use, affordable, and
+                  built for the Indian market.
+                </p>
+                <div className="grid gap-4">
+                  {[
+                    "SMS-based transaction tracking across banks",
+                    "AI-powered market and tax alerts",
+                    "Built for vernacular users and voice-driven assistants",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <div className="w-2.5 h-2.5 bg-blue-600 rounded-full mt-2" />
+                      <p className="text-gray-600 text-sm">{item}</p>
+                    </div>
+                  ))}
                 </div>
-                <div className="text-blue-400 text-sm mt-1">Founder, Grokkon</div>
-                <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
               </div>
             </div>
-            <div className="lg:col-span-3 space-y-5">
-              <p className="text-gray-300 text-lg leading-relaxed">
-                While most kids his age were worrying about exams, Prithu was watching his
-                neighbourhood shopkeepers struggle — overcharged by suppliers, blindsided by GST
-                changes, with no one to guide them.
-              </p>
-              <p className="text-gray-400 leading-relaxed">
-                At 13, he decided to do something about it. Growing up in Delhi surrounded by small
-                traders, street vendors, and first-generation entrepreneurs, Prithu saw a clear gap:
-                powerful financial tools existed, but only for large companies that could afford them.
-              </p>
-              <p className="text-gray-400 leading-relaxed">
-                So he built Grokkon — an AI that reads your SMS transactions, tracks your money, and
-                speaks to you in your own language. No accountant needed. No expensive software. Just
-                intelligence, affordable for everyone.
-              </p>
-            </div>
-          </div>
+          </section>
 
-          <div className="mt-16 border-t border-white/10 pt-12">
-            <div className="grid lg:grid-cols-5 gap-12 items-start">
-              <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
-                <div
-                  className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
-                  style={{
-                    background: "linear-gradient(135deg, #2563eb 0%, #60a5fa 100%)",
-                    fontFamily: "'Outfit', sans-serif",
-                  }}
+          {/* ─── FOUNDER ─────────────────────────────────────────────────────── */}
+          <section id="founder" className="py-24 bg-[#07101f] relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-72 h-72 bg-indigo-900/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative max-w-5xl mx-auto px-6">
+              <div className="text-center mb-14">
+                <span className="text-blue-400 text-xs font-bold uppercase tracking-widest">
+                  Our Team
+                </span>
+                <h2
+                  className="text-4xl font-extrabold text-white mt-3"
+                  style={{ fontFamily: "'Outfit', sans-serif" }}
                 >
-                  SM
-                </div>
-                <div>
+                  A 13-year-old with a billion-dollar vision.
+                </h2>
+              </div>
+
+              <div className="grid lg:grid-cols-5 gap-12 items-start">
+                <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
                   <div
-                    className="text-white font-bold text-xl"
-                    style={{ fontFamily: "'Outfit', sans-serif" }}
+                    className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
+                    style={{
+                      background: "linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%)",
+                      fontFamily: "'Outfit', sans-serif",
+                    }}
                   >
-                    Shresht Madhav
+                    PM
                   </div>
-                  <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
-                  <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
-                </div>
-              </div>
-              <div className="lg:col-span-3 space-y-5">
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  <strong>Shresht Madhav</strong> is the Co-Founder of Grokkon and the mind behind many of our business strategies. At just 13, he combines creativity with strategic thinking to help shape the direction of our startup.
-                </p>
-                <p className="text-gray-400 leading-relaxed">
-                  Beyond business, Shresht is a passionate percussionist. Music has taught him discipline, teamwork, and consistency—qualities that influence the way he approaches every challenge.
-                </p>
-                <p className="text-gray-400 leading-relaxed">
-                  Whether it&apos;s brainstorming new ideas or planning for the future, his curiosity, innovative mindset, and passion for learning make him an essential part of Grokkon&apos;s journey.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-16 border-t border-white/10 pt-12">
-            <div className="grid lg:grid-cols-5 gap-12 items-start">
-              <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
-                <div
-                  className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
-                  style={{
-                    background: "linear-gradient(135deg, #0f766e 0%, #38bdf8 100%)",
-                    fontFamily: "'Outfit', sans-serif",
-                  }}
-                >
-                  RT
-                </div>
-                <div>
-                  <div
-                    className="text-white font-bold text-xl"
-                    style={{ fontFamily: "'Outfit', sans-serif" }}
-                  >
-                    Raghav Tyagi
+                  <div>
+                    <div
+                      className="text-white font-bold text-xl"
+                      style={{ fontFamily: "'Outfit', sans-serif" }}
+                    >
+                      Prithu Mishra
+                    </div>
+                    <div className="text-blue-400 text-sm mt-1">Founder, Grokkon</div>
+                    <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
                   </div>
-                  <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
-                  <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
+                </div>
+                <div className="lg:col-span-3 space-y-5">
+                  <p className="text-gray-300 text-lg leading-relaxed">
+                    While most kids his age were worrying about exams, Prithu was watching his
+                    neighbourhood shopkeepers struggle — overcharged by suppliers, blindsided by GST
+                    changes, with no one to guide them.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    At 13, he decided to do something about it. Growing up in Delhi surrounded by small
+                    traders, street vendors, and first-generation entrepreneurs, Prithu saw a clear gap:
+                    powerful financial tools existed, but only for large companies that could afford them.
+                  </p>
+                  <p className="text-gray-400 leading-relaxed">
+                    So he built Grokkon — an AI that reads your SMS transactions, tracks your money, and
+                    speaks to you in your own language. No accountant needed. No expensive software. Just
+                    intelligence, affordable for everyone.
+                  </p>
                 </div>
               </div>
-              <div className="lg:col-span-3 space-y-5">
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  <strong>Raghav Tyagi</strong> is a 13-year-old co-founder of Grokkon with an exceptional passion for science and innovation. His curiosity and analytical mindset help him approach challenges with logic and creativity. He is always eager to learn and contribute new ideas that strengthen the team&apos;s vision.
-                </p>
-                <p className="text-gray-400 leading-relaxed">
-                  Raghav has a strong interest in Physics, Biology, and Chemistry, and has already completed studying these subjects up to the 10th-grade level.
-                </p>
-                <p className="text-gray-400 leading-relaxed">
-                  His scientific knowledge, dedication, and problem-solving abilities make him a valuable member of Grokkon as we continue building solutions for the future.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* ─── WAITLIST CTA ────────────────────────────────────────────────── */}
-      <section className="py-24 bg-blue-600 relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-10"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&h=600&fit=crop&auto=format')",
-          }}
-        />
-        <div className="relative max-w-3xl mx-auto px-6 text-center">
-          <h2
-            className="text-4xl lg:text-5xl font-extrabold text-white mb-5"
-            style={{ fontFamily: "'Outfit', sans-serif" }}
-          >
-            Be the first to access Grokkon
-          </h2>
-          <p className="text-blue-100 text-lg mb-10 leading-relaxed">
-            We are launching soon. Join our waitlist to get early access and help shape the product
-            that will change how India does business.
-          </p>
-        </div>
-      </section>
-
-      {/* ─── CONTACT ─────────────────────────────────────────────────────── */}
-      <section id="contact" className="py-24 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              Contact Us
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
-            >
-              Get in touch
-            </h2>
-            <p className="text-gray-500">
-              Questions, partnerships, or just want to say hello — we would love to hear from you.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
-            <a
-              href="tel:8796152267"
-              className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
-            >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.68-1.68a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div>
-                <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Phone</div>
-                <div className="text-gray-900 font-semibold mt-0.5">+91 87961 52267</div>
-              </div>
-            </a>
-
-            <a
-              href="mailto:mishra.prithu07@gmail.com"
-              className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
-            >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-              <div>
-                <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Email</div>
-                <div className="text-gray-900 font-semibold mt-0.5 text-sm break-all">
-                  mishra.prithu07@gmail.com
+              <div className="mt-16 border-t border-white/10 pt-12">
+                <div className="grid lg:grid-cols-5 gap-12 items-start">
+                  <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
+                    <div
+                      className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
+                      style={{
+                        background: "linear-gradient(135deg, #2563eb 0%, #60a5fa 100%)",
+                        fontFamily: "'Outfit', sans-serif",
+                      }}
+                    >
+                      SM
+                    </div>
+                    <div>
+                      <div
+                        className="text-white font-bold text-xl"
+                        style={{ fontFamily: "'Outfit', sans-serif" }}
+                      >
+                        Shresht Madhav
+                      </div>
+                      <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
+                      <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
+                    </div>
+                  </div>
+                  <div className="lg:col-span-3 space-y-5">
+                    <p className="text-gray-300 text-lg leading-relaxed">
+                      <strong>Shresht Madhav</strong> is the Co-Founder of Grokkon and the mind behind many of our business strategies. At just 13, he combines creativity with strategic thinking to help shape the direction of our startup.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Beyond business, Shresht is a passionate percussionist. Music has taught him discipline, teamwork, and consistency—qualities that influence the way he approaches every challenge.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Whether it&apos;s brainstorming new ideas or planning for the future, his curiosity, innovative mindset, and passion for learning make him an essential part of Grokkon&apos;s journey.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── FOOTER ──────────────────────────────────────────────────────── */}
-      <footer className="bg-[#07101f] py-12 border-t border-white/5">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
-          <button onClick={() => goto("home")} className="flex items-center gap-3">
-            <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
-            <div className="text-left">
-              <div className="text-white font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
-                Grokkon
+              <div className="mt-16 border-t border-white/10 pt-12">
+                <div className="grid lg:grid-cols-5 gap-12 items-start">
+                  <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
+                    <div
+                      className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
+                      style={{
+                        background: "linear-gradient(135deg, #0f766e 0%, #38bdf8 100%)",
+                        fontFamily: "'Outfit', sans-serif",
+                      }}
+                    >
+                      RT
+                    </div>
+                    <div>
+                      <div
+                        className="text-white font-bold text-xl"
+                        style={{ fontFamily: "'Outfit', sans-serif" }}
+                      >
+                        Raghav Tyagi
+                      </div>
+                      <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
+                      <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
+                    </div>
+                  </div>
+                  <div className="lg:col-span-3 space-y-5">
+                    <p className="text-gray-300 text-lg leading-relaxed">
+                      <strong>Raghav Tyagi</strong> is a 13-year-old co-founder of Grokkon with an exceptional passion for science and innovation. His curiosity and analytical mindset help him approach challenges with logic and creativity. He is always eager to learn and contribute new ideas that strengthen the team&apos;s vision.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                      Raghav has a strong interest in Physics, Biology, and Chemistry, and has already completed studying these subjects up to the 10th-grade level.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                      His scientific knowledge, dedication, and problem-solving abilities make him a valuable member of Grokkon as we continue building solutions for the future.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div className="text-gray-600 text-xs">Making the Future Affordable.</div>
             </div>
-          </button>
+          </section>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            {NAV.map((n) => (
-              <button
-                key={n.id}
-                onClick={() => goto(n.id)}
-                className="text-gray-500 hover:text-gray-300 text-sm transition-colors"
+          {/* ─── WAITLIST CTA ────────────────────────────────────────────────── */}
+          <section className="py-24 bg-blue-600 relative overflow-hidden">
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-10"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&h=600&fit=crop&auto=format')",
+              }}
+            />
+            <div className="relative max-w-3xl mx-auto px-6 text-center">
+              <h2
+                className="text-4xl lg:text-5xl font-extrabold text-white mb-5"
+                style={{ fontFamily: "'Outfit', sans-serif" }}
               >
-                {n.label}
-              </button>
-            ))}
-          </div>
+                Be the first to access Grokkon
+              </h2>
+              <p className="text-blue-100 text-lg mb-10 leading-relaxed">
+                We are launching soon. Join our waitlist to get early access and help shape the product
+                that will change how India does business.
+              </p>
+            </div>
+          </section>
 
-          <div className="text-gray-600 text-xs text-center">
-            © 2026 Grokkon. All rights reserved.
-          </div>
+          {/* ─── CONTACT ─────────────────────────────────────────────────────── */}
+          <section id="contact" className="py-24 bg-gray-50">
+            <div className="max-w-5xl mx-auto px-6">
+              <div className="text-center mb-14">
+                <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
+                  Contact Us
+                </span>
+                <h2
+                  className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
+                  style={{ fontFamily: "'Outfit', sans-serif" }}
+                >
+                  Get in touch
+                </h2>
+                <p className="text-gray-500">
+                  Questions, partnerships, or just want to say hello — we would love to hear from you.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
+                <a
+                  href="tel:8796152267"
+                  className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
+                >
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.68-1.68a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Phone</div>
+                    <div className="text-gray-900 font-semibold mt-0.5">+91 87961 52267</div>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:mishra.prithu07@gmail.com"
+                  className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
+                >
+                  <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Email</div>
+                    <div className="text-gray-900 font-semibold mt-0.5 text-sm break-all">
+                      mishra.prithu07@gmail.com
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          {/* ─── FOOTER ──────────────────────────────────────────────────────── */}
+          <footer className="bg-[#07101f] py-12 border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+              <button onClick={() => goto("home")} className="flex items-center gap-3">
+                <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
+                <div className="text-left">
+                  <div className="text-white font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
+                    Grokkon
+                  </div>
+                  <div className="text-gray-600 text-xs">Making the Future Affordable.</div>
+                </div>
+              </button>
+
+              <div className="flex flex-wrap justify-center gap-6">
+                {NAV.map((n) => (
+                  <button
+                    key={n.id}
+                    onClick={() => goto(n.id)}
+                    className="text-gray-500 hover:text-gray-300 text-sm transition-colors"
+                  >
+                    {n.label}
+                  </button>
+                ))}
+              </div>
+
+              <div className="text-gray-600 text-xs text-center">
+                © 2026 Grokkon. All rights reserved.
+              </div>
+            </div>
+          </footer>
         </div>
-      </footer>
-    </div>
-  );
+        );
 }
