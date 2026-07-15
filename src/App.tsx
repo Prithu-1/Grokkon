@@ -643,42 +643,7 @@ export default function App() {
                 </div>
               </div>
 
-              <div className="mt-16 border-t border-white/10 pt-12">
-                <div className="grid lg:grid-cols-5 gap-12 items-start">
-                  <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
-                    <div
-                      className="w-44 h-44 rounded-full flex items-center justify-center text-white text-5xl font-extrabold shadow-2xl border-4 border-blue-500/20"
-                      style={{
-                        background: "linear-gradient(135deg, #2563eb 0%, #60a5fa 100%)",
-                        fontFamily: "'Outfit', sans-serif",
-                      }}
-                    >
-                      SM
-                    </div>
-                    <div>
-                      <div
-                        className="text-white font-bold text-xl"
-                        style={{ fontFamily: "'Outfit', sans-serif" }}
-                      >
-                        Shresht Madhav
-                      </div>
-                      <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
-                      <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
-                    </div>
-                  </div>
-                  <div className="lg:col-span-3 space-y-5">
-                    <p className="text-gray-300 text-lg leading-relaxed">
-                      <strong>Shresht Madhav</strong> is the Co-Founder of Grokkon and the mind behind many of our business strategies. At just 13, he combines creativity with strategic thinking to help shape the direction of our startup.
-                    </p>
-                    <p className="text-gray-400 leading-relaxed">
-                      Beyond business, Shresht is a passionate percussionist. Music has taught him discipline, teamwork, and consistency—qualities that influence the way he approaches every challenge.
-                    </p>
-                    <p className="text-gray-400 leading-relaxed">
-                      Whether it&apos;s brainstorming new ideas or planning for the future, his curiosity, innovative mindset, and passion for learning make him an essential part of Grokkon&apos;s journey.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              
               <div className="mt-16 border-t border-white/10 pt-12">
                 <div className="grid lg:grid-cols-5 gap-12 items-start">
                   <div className="lg:col-span-2 flex flex-col items-center lg:items-start gap-5">
