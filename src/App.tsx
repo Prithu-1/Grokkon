@@ -33,7 +33,7 @@ export default function App() {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    const sessionSubmitted = sessionStorage.getItem("BizBuddy-waitlist-submitted");
+    const sessionSubmitted = sessionStorage.getItem("Grokkon-waitlist-submitted");
     if (sessionSubmitted === "true") {
       setSubmitted(true);
     }
@@ -67,7 +67,7 @@ export default function App() {
     if (submitted) return;
 
     setSubmitted(true);
-    sessionStorage.setItem("BizBuddy-waitlist-submitted", "true");
+    sessionStorage.setItem("Grokkon-waitlist-submitted", "true");
     openWaitlist();
   };
 
@@ -87,12 +87,12 @@ export default function App() {
             onClick={() => goto("home")}
             className="flex items-center gap-2.5"
           >
-            <img src={logo} alt="BizBuddy" className="w-8 h-8 object-contain" />
+            <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <span
               className={`text-xl font-bold transition-colors ${scrolled ? "text-gray-900" : "text-white"}`}
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
-              BizBuddy
+              Grokkon
             </span>
           </button>
 
@@ -171,7 +171,7 @@ export default function App() {
             </h1>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-9 max-w-lg">
-              BizBuddy reads your bank SMS messages to track every rupee,
+              Grokkon reads your bank SMS messages to track every rupee,
               monitors markets and news in real time, and speaks to you in your
               own language — starting at just ₹49/month.
             </p>
@@ -315,7 +315,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              What BizBuddy Does
+              What Grokkon Does
             </span>
             <h2
               className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
@@ -324,7 +324,7 @@ export default function App() {
               Financial intelligence for every business
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-base leading-relaxed">
-              From tracking daily expenses to monitoring global markets, BizBuddy
+              From tracking daily expenses to monitoring global markets, Grokkon
               gives every Indian entrepreneur access to enterprise-grade financial tools.
             </p>
           </div>
@@ -335,7 +335,7 @@ export default function App() {
                 icon: <MessageSquare size={22} />,
                 color: "blue",
                 title: "SMS Expense Tracking",
-                desc: "BizBuddy reads your bank SMS messages to automatically log every transaction — no manual entry, no app integrations, no privacy concerns.",
+                desc: "Grokkon reads your bank SMS messages to automatically log every transaction — no manual entry, no app integrations, no privacy concerns.",
               },
               {
                 icon: <TrendingUp size={22} />,
@@ -365,7 +365,7 @@ export default function App() {
                 icon: <Star size={22} />,
                 color: "violet",
                 title: "Tax & Law Updates",
-                desc: "Never miss a GST deadline or new tax bill. BizBuddy monitors government updates and explains what they mean for you.",
+                desc: "Never miss a GST deadline or new tax bill. Grokkon monitors government updates and explains what they mean for you.",
               },
               {
                 icon: <TrendingUp size={22} />,
@@ -426,7 +426,7 @@ export default function App() {
               Powerful AI. Honest Pricing.
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto">
-              We are launching soon — join the waitlist and be among the first to access BizBuddy.
+              We are launching soon — join the waitlist and be among the first to access Grokkon.
             </p>
           </div>
 
@@ -516,13 +516,13 @@ export default function App() {
                 Preview
               </span>
               <h3 className="text-3xl font-extrabold mt-4 mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>
-                See the BizBuddy experience in action
+                See the Grokkon experience in action
               </h3>
               <p className="text-slate-300 mb-8 text-base leading-relaxed">
-                Explore the prototype to get a first-hand feel for how BizBuddy tracks expenses, alerts you to business events, and puts financial intelligence at your fingertips.
+                Explore the prototype to get a first-hand feel for how Grokkon tracks expenses, alerts you to business events, and puts financial intelligence at your fingertips.
               </p>
               <button
-                onClick={() => window.open("https://BizBuddy-prototype.vercel.app/", "_blank")}
+                onClick={() => window.open("https://Grokkon-prototype.vercel.app/", "_blank")}
                 className="inline-flex items-center justify-center rounded-xl bg-blue-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:bg-blue-400 active:scale-95"
               >
                 Preview
@@ -553,7 +553,7 @@ export default function App() {
 
           <div>
             <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              About BizBuddy
+              About Grokkon
             </span>
             <h2
               className="text-4xl font-extrabold text-gray-900 mt-3 mb-6 leading-tight"
@@ -562,7 +562,7 @@ export default function App() {
               Every business deserves powerful financial tools
             </h2>
             <p className="text-gray-600 leading-relaxed mb-5">
-              BizBuddy was born from a simple idea: empower every entrepreneur with
+              Grokkon was born from a simple idea: empower every entrepreneur with
               intelligent financial tools that are easy to use, affordable, and
               built for the Indian market.
             </p>
@@ -618,7 +618,7 @@ export default function App() {
                 >
                   Prithu Mishra
                 </div>
-                <div className="text-blue-400 text-sm mt-1">Founder, BizBuddy</div>
+                <div className="text-blue-400 text-sm mt-1">Founder, Grokkon</div>
                 <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
               </div>
             </div>
@@ -634,7 +634,7 @@ export default function App() {
                 powerful financial tools existed, but only for large companies that could afford them.
               </p>
               <p className="text-gray-400 leading-relaxed">
-                So he built BizBuddy — an AI that reads your SMS transactions, tracks your money, and
+                So he built Grokkon — an AI that reads your SMS transactions, tracks your money, and
                 speaks to you in your own language. No accountant needed. No expensive software. Just
                 intelligence, affordable for everyone.
               </p>
@@ -659,19 +659,19 @@ export default function App() {
                   >
                     Raghav Tyagi
                   </div>
-                  <div className="text-blue-400 text-sm mt-1">Co-Founder, BizBuddy</div>
+                  <div className="text-blue-400 text-sm mt-1">Co-Founder, Grokkon</div>
                   <div className="text-gray-600 text-sm mt-1">Delhi, India · Age 13</div>
                 </div>
               </div>
               <div className="lg:col-span-3 space-y-5">
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  <strong>Raghav Tyagi</strong> is a 13-year-old co-founder of BizBuddy with an exceptional passion for science and innovation. His curiosity and analytical mindset help him approach challenges with logic and creativity. He is always eager to learn and contribute new ideas that strengthen the team&apos;s vision.
+                  <strong>Raghav Tyagi</strong> is a 13-year-old co-founder of Grokkon with an exceptional passion for science and innovation. His curiosity and analytical mindset help him approach challenges with logic and creativity. He is always eager to learn and contribute new ideas that strengthen the team&apos;s vision.
                 </p>
                 <p className="text-gray-400 leading-relaxed">
                   Raghav has a strong interest in Physics, Biology, and Chemistry, and has already completed studying these subjects up to the 10th-grade level.
                 </p>
                 <p className="text-gray-400 leading-relaxed">
-                  His scientific knowledge, dedication, and problem-solving abilities make him a valuable member of BizBuddy as we continue building solutions for the future.
+                  His scientific knowledge, dedication, and problem-solving abilities make him a valuable member of Grokkon as we continue building solutions for the future.
                 </p>
               </div>
             </div>
@@ -691,7 +691,7 @@ export default function App() {
             className="text-4xl lg:text-5xl font-extrabold text-white mb-5"
             style={{ fontFamily: "'Outfit', sans-serif" }}
           >
-            Be the first to access BizBuddy
+            Be the first to access Grokkon
           </h2>
           <p className="text-blue-100 text-lg mb-10 leading-relaxed">
             We are launching soon. Join our waitlist to get early access and help shape the product
@@ -757,10 +757,10 @@ export default function App() {
       <footer className="bg-[#07101f] py-12 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
           <button onClick={() => goto("home")} className="flex items-center gap-3">
-            <img src={logo} alt="BizBuddy" className="w-8 h-8 object-contain" />
+            <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <div className="text-left">
               <div className="text-white font-bold" style={{ fontFamily: "'Outfit', sans-serif" }}>
-                BizBuddy
+                Grokkon
               </div>
               <div className="text-gray-600 text-xs">Making the Future Affordable.</div>
             </div>
@@ -779,7 +779,7 @@ export default function App() {
           </div>
 
           <div className="text-gray-600 text-xs text-center">
-            © 2026 BizBuddy. All rights reserved.
+            © 2026 Grokkon. All rights reserved.
           </div>
         </div>
       </footer>
