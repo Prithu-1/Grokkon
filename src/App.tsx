@@ -79,9 +79,8 @@ export default function App() {
       {/* ─── NAV ─────────────────────────────────────────────────────────── */}
       <header
         className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
-            : "bg-transparent"
-          }`}
+          ? "bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100"
+          : "bg-transparent"}`}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <button
@@ -90,8 +89,7 @@ export default function App() {
           >
             <img src={logo} alt="Grokkon" className="w-8 h-8 object-contain" />
             <span
-              className={`text-xl font-bold transition-colors ${scrolled ? "text-gray-900" : "text-white"
-                }`}
+              className={`text-xl font-bold transition-colors ${scrolled ? "text-gray-900" : "text-white"}`}
               style={{ fontFamily: "'Outfit', sans-serif" }}
             >
               Grokkon
@@ -104,11 +102,10 @@ export default function App() {
                 key={n.id}
                 onClick={() => goto(n.id)}
                 className={`text-sm font-medium transition-colors ${active === n.id
-                    ? "text-blue-500"
-                    : scrolled
-                      ? "text-gray-600 hover:text-gray-900"
-                      : "text-white/80 hover:text-white"
-                  }`}
+                  ? "text-blue-500"
+                  : scrolled
+                    ? "text-gray-600 hover:text-gray-900"
+                    : "text-white/80 hover:text-white"}`}
               >
                 {n.label}
               </button>
@@ -118,8 +115,7 @@ export default function App() {
           <div className="flex items-center gap-4">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className={`md:hidden p-1 ${scrolled ? "text-gray-900" : "text-white"
-                }`}
+              className={`md:hidden p-1 ${scrolled ? "text-gray-900" : "text-white"}`}
             >
               {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -152,11 +148,9 @@ export default function App() {
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
-            backgroundImage:
-              "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
             backgroundSize: "60px 60px",
-          }}
-        />
+          }} />
 
         <div className="relative max-w-7xl mx-auto px-6 pt-28 pb-20 grid lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -194,8 +188,7 @@ export default function App() {
                   placeholder="Enter your email address"
                   required
                   className="flex-1 border border-white/15 text-white placeholder-gray-500 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-blue-400 transition-colors"
-                  style={{ backgroundColor: "rgba(255,255,255,0.06)" }}
-                />
+                  style={{ backgroundColor: "rgba(255,255,255,0.06)" }} />
                 <button
                   type="submit"
                   className="bg-blue-600 text-white px-6 py-3 rounded-xl text-sm font-bold hover:bg-blue-500 active:scale-95 transition-all whitespace-nowrap"
@@ -399,11 +392,10 @@ export default function App() {
               >
                 <div
                   className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 ${f.color === "blue"
-                      ? "bg-blue-50 text-blue-600"
-                      : f.color === "indigo"
-                        ? "bg-indigo-50 text-indigo-600"
-                        : "bg-violet-50 text-violet-600"
-                    }`}
+                    ? "bg-blue-50 text-blue-600"
+                    : f.color === "indigo"
+                      ? "bg-indigo-50 text-indigo-600"
+                      : "bg-violet-50 text-violet-600"}`}
                 >
                   {f.icon}
                 </div>
@@ -537,7 +529,7 @@ export default function App() {
               </button>
             </div>
           </section>
-          </div>
+        </div>
       </section>
 
       {/* ─── ABOUT US ────────────────────────────────────────────────────── */}
@@ -547,8 +539,7 @@ export default function App() {
             <img
               src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=700&h=500&fit=crop&auto=format"
               alt="Small business owner at their shop reviewing finances on smartphone"
-              className="rounded-2xl w-full h-[420px] object-cover shadow-xl bg-blue-100"
-            />
+              className="rounded-2xl w-full h-[420px] object-cover shadow-xl bg-blue-100" />
             <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-5 shadow-xl border border-gray-100 hidden lg:block">
               <div
                 className="text-blue-600 font-extrabold text-2xl"
@@ -693,10 +684,8 @@ export default function App() {
         <div
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&h=600&fit=crop&auto=format')",
-          }}
-        />
+            backgroundImage: "url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&h=600&fit=crop&auto=format')",
+          }} />
         <div className="relative max-w-3xl mx-auto px-6 text-center">
           <h2
             className="text-4xl lg:text-5xl font-extrabold text-white mb-5"
@@ -713,59 +702,57 @@ export default function App() {
 
       {/* ─── CONTACT ─────────────────────────────────────────────────────── */}
       <section id="contact" className="py-24 bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              Contact Us
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
-            >
-              Get in touch
-            </h2>
-            <p className="text-gray-500">
-              Questions, partnerships, or just want to say hello — we would love to hear from you.
-            </p>
+  <div className="max-w-5xl mx-auto px-6">
+    <div className="text-center mb-14">
+      <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
+        Contact Us
+      </span>
+
+      <h2
+        className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
+        style={{ fontFamily: "'Outfit', sans-serif" }}
+      >
+        Get in touch
+      </h2>
+
+      <p className="text-gray-500">
+        Questions, partnerships, or just want to say hello — we'd love to hear from you.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-6">
+
+      <a
+        href="tel:8796152267"
+        className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all"
+      >
+        <div>
+          <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">
+            Phone
           </div>
-
-          <div className="grid sm:grid-cols-2 gap-6 max-w-xl mx-auto">
-            
-              href="tel:8796152267"
-              className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
-            >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l1.68-1.68a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-              </div>
-              <div>
-                <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Phone</div>
-                <div className="text-gray-900 font-semibold mt-0.5">+91 87961 52267</div>
-              </div>
-            </a>
-
-            
-              href="mailto:mishra.prithu07@gmail.com"
-              className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all group"
-            >
-              <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                </svg>
-              </div>
-              <div>
-                <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">Email</div>
-                <div className="text-gray-900 font-semibold mt-0.5 text-sm break-all">
-                  mishra.prithu07@gmail.com
-                </div>
-              </div>
-            </a>
+          <div className="text-gray-900 font-semibold">
+            +91 87961 52267
           </div>
         </div>
-      </section>
+      </a>
 
+      <a
+        href="mailto:mishra.prithu07@gmail.com"
+        className="flex items-center gap-4 bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all"
+      >
+        <div>
+          <div className="text-gray-400 text-xs font-semibold uppercase tracking-wide">
+            Email
+          </div>
+          <div className="text-gray-900 font-semibold break-all">
+            mishra.prithu07@gmail.com
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
       {/* ─── FOOTER ──────────────────────────────────────────────────────── */}
       <footer className="bg-[#07101f] py-12 border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -796,6 +783,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-    </div>
-  );
+        </div>
+  ) 
 }
