@@ -172,9 +172,7 @@ export default function App() {
             </h1>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-9 max-w-lg">
-              Grokkon reads your bank SMS messages to track every rupee,
-              monitors markets and news in real time, and speaks to you in your
-              own language — starting at just ₹49/month.
+              Grokkon tracks finances, manages inventory, monitors markets, and provides AI-powered insights to help businesses grow smarter. From expense tracking and reports to tax updates, news alerts, and recommendations, Grokkon simplifies daily operations. Supports 22+ Indian languages, starting at ₹49/month.
             </p>
 
             {!submitted ? (
