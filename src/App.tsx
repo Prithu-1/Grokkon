@@ -11,6 +11,7 @@ import {
   Check,
   Star,
   ChevronDown,
+  Package,
 } from "lucide-react";
 import PrivacyAndSecurity from "./PrivacyAndSecurity";
 
@@ -311,102 +312,109 @@ export default function App() {
       </div>
 
       {/* ─── FEATURES ────────────────────────────────────────────────────── */}
-      <section className="py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
-              What Grokkon Does
-            </span>
-            <h2
-              className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
-              style={{ fontFamily: "'Outfit', sans-serif" }}
-            >
-              Financial intelligence for every business
-            </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto text-base leading-relaxed">
-              From tracking daily expenses to monitoring global markets, Grokkon
-              gives every Indian entrepreneur access to enterprise-grade financial tools.
-            </p>
-          </div>
+<section className="py-24 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-16">
+      <span className="text-blue-600 text-xs font-bold uppercase tracking-widest">
+        What Grokkon Does
+      </span>
+      <h2
+        className="text-4xl font-extrabold text-gray-900 mt-3 mb-4"
+        style={{ fontFamily: "'Outfit', sans-serif" }}
+      >
+        Financial intelligence for every business
+      </h2>
+      <p className="text-gray-500 max-w-2xl mx-auto text-base leading-relaxed">
+        From tracking daily expenses to monitoring global markets, Grokkon
+        gives every Indian entrepreneur access to enterprise-grade financial tools.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <MessageSquare size={22} />,
-                color: "blue",
-                title: "SMS Expense Tracking",
-                desc: "Grokkon reads your bank SMS messages to automatically log every transaction — no manual entry, no app integrations, no privacy concerns.",
-              },
-              {
-                icon: <TrendingUp size={22} />,
-                color: "indigo",
-                title: "AI Financial Advice",
-                desc: "Reads hundreds of market reports and news articles to give you timely, data-backed guidance tailored to your business.",
-              },
-              {
-                icon: <Bell size={22} />,
-                color: "violet",
-                title: "Real-Time News Alerts",
-                desc: '"Onion prices rising — stock up fast!" Get actionable alerts before market shifts hit your margins.',
-              },
-              {
-                icon: <FileText size={22} />,
-                color: "blue",
-                title: "Investor-Ready Reports",
-                desc: "Auto-generate professional financial reports you can share with investors, banks, or government schemes — instantly.",
-              },
-              {
-                icon: <Globe size={22} />,
-                color: "indigo",
-                title: "22+ Indian Languages",
-                desc: "Hindi, Tamil, Telugu, Bengali, Marathi, Kannada and more — powerful finance accessible to every rural entrepreneur.",
-              },
-              {
-                icon: <Star size={22} />,
-                color: "violet",
-                title: "Tax & Law Updates",
-                desc: "Never miss a GST deadline or new tax bill. Grokkon monitors government updates and explains what they mean for you.",
-              },
-              {
-                icon: <TrendingUp size={22} />,
-                color: "blue",
-                title: "Opportunity Radar",
-                desc: "AI detects business growth opportunities like subsidies, price drops, seasonal demand, and market trends.",
-              },
-              {
-                icon: <Check size={22} />,
-                color: "indigo",
-                title: "Business Health Score",
-                desc: "A daily score (0–100) that measures your business's financial health and overall performance.",
-              },
-              {
-                icon: <FileText size={22} />,
-                color: "violet",
-                title: "Automatic Business Diary",
-                desc: "AI automatically records and summarizes your business's daily activities, income, expenses, and key events.",
-              },
-            ].map((f, i) => (
-              <div
-                key={i}
-                className="bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all duration-300 group"
-              >
-                <div
-                  className={`w-11 h-11 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 ${f.color === "blue"
-                    ? "bg-blue-50 text-blue-600"
-                    : f.color === "indigo"
-                      ? "bg-indigo-50 text-indigo-600"
-                      : "bg-violet-50 text-violet-600"}`}
-                >
-                  {f.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{f.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-sm">{f.desc}</p>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        {
+          icon: <MessageSquare size={22} />,
+          color: "blue",
+          title: "SMS Expense Tracking",
+          desc: "Grokkon reads your bank SMS messages to automatically log every transaction — no manual entry, no app integrations, no privacy concerns.",
+        },
+        {
+          icon: <TrendingUp size={22} />,
+          color: "indigo",
+          title: "AI Financial Advice",
+          desc: "Reads hundreds of market reports and news articles to give you timely, data-backed guidance tailored to your business.",
+        },
+        {
+          icon: <Bell size={22} />,
+          color: "violet",
+          title: "Real-Time News Alerts",
+          desc: '"Onion prices rising — stock up fast!" Get actionable alerts before market shifts hit your margins.',
+        },
+        {
+          icon: <Package size={22} />,
+          color: "blue",
+          title: "AI Inventory Tracking",
+          desc: "Track your stock effortlessly with AI-powered inventory management. Grokkon monitors products, predicts demand, detects low stock, and helps you make smarter purchasing decisions.",
+        },
+        {
+          icon: <FileText size={22} />,
+          color: "blue",
+          title: "Investor-Ready Reports",
+          desc: "Auto-generate professional financial reports you can share with investors, banks, or government schemes — instantly.",
+        },
+        {
+          icon: <Globe size={22} />,
+          color: "indigo",
+          title: "22+ Indian Languages",
+          desc: "Hindi, Tamil, Telugu, Bengali, Marathi, Kannada and more — powerful finance accessible to every rural entrepreneur.",
+        },
+        {
+          icon: <Star size={22} />,
+          color: "violet",
+          title: "Tax & Law Updates",
+          desc: "Never miss a GST deadline or new tax bill. Grokkon monitors government updates and explains what they mean for you.",
+        },
+        {
+          icon: <TrendingUp size={22} />,
+          color: "blue",
+          title: "Opportunity Radar",
+          desc: "AI detects business growth opportunities like subsidies, price drops, seasonal demand, and market trends.",
+        },
+        {
+          icon: <Check size={22} />,
+          color: "indigo",
+          title: "Business Health Score",
+          desc: "A daily score (0–100) that measures your business's financial health and overall performance.",
+        },
+        {
+          icon: <FileText size={22} />,
+          color: "violet",
+          title: "Automatic Business Diary",
+          desc: "AI automatically records and summarizes your business's daily activities, income, expenses, and key events.",
+        },
+      ].map((f, i) => (
+        <div
+          key={i}
+          className="bg-white rounded-2xl p-7 border border-gray-100 hover:border-blue-100 hover:shadow-lg transition-all duration-300 group"
+        >
+          <div
+            className={`w-11 w-11 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110 ${
+              f.color === "blue"
+                ? "bg-blue-50 text-blue-600"
+                : f.color === "indigo"
+                ? "bg-indigo-50 text-indigo-600"
+                : "bg-violet-50 text-violet-600"
+            }`}
+          >
+            {f.icon}
           </div>
+          <h3 className="text-lg font-semibold text-gray-900 mb-2">{f.title}</h3>
+          <p className="text-gray-600 leading-relaxed text-sm">{f.desc}</p>
         </div>
-      </section>
-
+      ))}
+    </div>
+  </div>
+</section>
       {/* ─── PRIVACY & SECURITY ──────────────────────────────────────────── */}
       <section id="security">
         <PrivacyAndSecurity />
@@ -456,6 +464,8 @@ export default function App() {
                   "5-minute morning briefing daily",
                   "Tax law & GST update alerts",
                   "SMS-based expense tracking",
+                  "Inventory Tracking",
+                  "Business Health Score",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3">
                     <div className="w-5 h-5 bg-blue-50 rounded-full flex items-center justify-center shrink-0 mt-0.5">
