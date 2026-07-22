@@ -508,6 +508,8 @@ export default function App() {
                   "Investor-ready financial reports",
                   "Deep analysis from reports & articles",
                   "Priority support",
+                  "Automatic Business Diary",
+                  "Opportunity Radar",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3">
                     <div className="w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center shrink-0 mt-0.5">
